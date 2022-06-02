@@ -99,7 +99,7 @@ const Stocks = (props) => {
       props.load();
     }
   }, [props.src]);
-  console.log(data);
+
   return data ? (
     <div className={classes.stocks}>
         <div className={classes.stockList}>

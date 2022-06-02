@@ -1,7 +1,6 @@
 import fakestockmarketgenerator from 'fake-stock-market-generator';
 
 export const numberOfDays = 365;
-console.log(fakestockmarketgenerator.generateStockData(numberOfDays));
 
 const stocks = [];
 let i = 0;
