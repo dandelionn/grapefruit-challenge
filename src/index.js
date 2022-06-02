@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './assets/fonts/Montserrat/Montserrat-Bold.ttf';
 import './assets/fonts/Montserrat/Montserrat-Regular.ttf';
 import './index.css';
-import App from './app';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -1,5 +1,5 @@
 
-import './app.css';
+import './App.css';
 import classes from './app.module.css';
 import Navbar from './navbar/navbar';
 import ArticlePreview from './widgets/article-preview';
