@@ -1,6 +1,6 @@
 import react, { useState } from 'react';
 import View from './view';
-
+import { getStocks as loadData } from '../../api/stocks';
 
 export default (props) => {
     const [state, setState] = useState({loading: false, error: false});
@@ -8,8 +8,8 @@ export default (props) => {
     const load = async (...args) => {
         try {
           setState({ loading: true, error: false });
-          //const data = await loadData(...args);
-          setState({ loading: false, data: '' });
+          const data = await loadData(...args);
+          setState({ loading: false, data: data });
         } catch (ex) {
           setState({ loading: false, error: true });
         }

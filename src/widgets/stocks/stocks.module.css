@@ -9,11 +9,16 @@
 .stockList {
     grid-column: 1;
     background-color: #f8f8f8;
-    /*border-right: 1px solid gray;*/
     box-shadow: 4px 0px 8px rgba(212, 202, 202, 0.452);
 }
 
-.chart {
+.chartSection {
+    height: 100%;
+    width: 100%;
     grid-column: 2 / span 3;
+}
 
+.chart {
+    height: 100%;
+    width: 100%;
 }

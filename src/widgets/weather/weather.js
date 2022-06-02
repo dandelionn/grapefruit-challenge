@@ -4,7 +4,7 @@ import IconWeather from '../../assets/icons/icon-weather.svg';
 
 const Weather = (props) => {
   const [data, setData] = useState(props.src)
-
+  
   useEffect(() => {
     if(!data) {
       props.load();

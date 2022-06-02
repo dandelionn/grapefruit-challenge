@@ -9,7 +9,7 @@ const View = ({ loading, error, data, onLoad,
     <div className={className}>
     { 
         loading ? <RenderLoading />
-        : error ? <RenderError error={error} /> : <RenderStocks src={data}/>
+        : error ? <RenderError error={error} /> : <RenderStocks src={data} load={onLoad}/>
     }
     </div>
 );

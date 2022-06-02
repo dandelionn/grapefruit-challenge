@@ -11,12 +11,14 @@ const location = {
         lat: -94.04
     }
 }
+
+// for some unknown reason none of the generated tokens are valid....
 const url = `${API_HOST}onecall?lat=${location.NewYork.lat}&lon=${location.NewYork.lon}&appid=${API_KEY}`;
 
 
 export const getWeather = async () => {
-  const response = await fetch(url);
-  const data = await response.json();
+  //const response = await fetch(url);
+  //const data = await response.json();
 
   return {
       location: 'New York',
