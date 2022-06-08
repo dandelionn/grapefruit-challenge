@@ -5,7 +5,7 @@ export const numberOfDays = 365;
 const stocks = [];
 let i = 0;
 
-while( i < 4 ) {
+while( i < 5 ) {
     stocks.push(fakestockmarketgenerator.generateStockData(numberOfDays).priceData);
     ++i;
 }

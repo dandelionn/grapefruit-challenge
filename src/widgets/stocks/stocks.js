@@ -102,12 +102,14 @@ const Stocks = (props) => {
 
   return data ? (
     <div className={classes.stocks}>
-        <div className={classes.stockList}>
+        <div className={classes.stockListWrapper}>
+          <div className={classes.stockList}>
             {
               data.map((item, index) => {
-                <Tab key={index} name={item.symbol} currentValue={item.priceData}/> 
+                return <Tab key={index} name={item.symbol} currentValue={item.priceData}/> 
               })
             }
+          </div>
         </div>
         <div className={classes.chartSection}>
           <div className={classes.chart}>

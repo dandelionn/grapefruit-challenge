@@ -1,0 +1,59 @@
+.tab {
+    width: 100%;
+    padding-right: 17px;
+    height: 25%;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.tabContent {
+    width: 75%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 3px solid #e9e9e9;
+}
+
+.symbolAndPrice {
+    grid-column: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap:12px;
+    flex-direction: column;
+}
+
+
+.symbol {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.price{
+    font-size: 16px;
+    color: #b2b2b2;
+}
+
+.procent {
+    grid-column: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.increase {
+    font-size: 30px;
+    color: #63da38;
+    margin-bottom: 20px;
+}
+
+.decrease {
+    font-size: 30px;
+    color: #ff3636;
+    margin-bottom: 20px;
+}

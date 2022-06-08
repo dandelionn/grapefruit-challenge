@@ -18,7 +18,7 @@ const Weather = (props) => {
             <img src={IconWeather} alt="Weather"/>
           </div>
           <div className={classes.text}>
-            <div className={classes.decription}>{data.description}</div>
+            <div className={classes.decription}>{data.current.description}</div>
             <div>{data.location}</div>
           </div>
         </div>
@@ -29,19 +29,21 @@ const Weather = (props) => {
             <div>Week</div>
           </div>       
           <div className={classes.currentTemp}>
-            <div>{data.current}</div>
+            <div>{data.current.temperature}</div>
             <div>&#176;</div>
           </div>
         </div>
         <div className={classes.hourlyWeather}>
             { 
               data.hourly.map((item, index) => {
-                return (
-                  <div key={index} className={classes.hourTemperature}>
-                    <div className={classes.hourTemperatureValue}>{item.temperature}&#176;</div>
-                    <div className={classes.hourValue}>{item.hour}</div>
-                </div>
-                );
+                if(index % 3 == 0) {
+                  return (
+                    <div key={index} className={classes.hourTemperature}>
+                      <div className={classes.hourTemperatureValue}>{item.temperature}&#176;</div>
+                      <div className={classes.hourValue}>{item.hour}</div>
+                    </div>
+                  );
+                }
               })
             }
         </div>
