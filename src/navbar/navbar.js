@@ -16,7 +16,7 @@ const Navbar = (props) => {
             <img src={IconLogo} className={classes.iconLogo} />
             <div className={classes.account}>
                 <img src={IconSearch} className={classes.iconSearch}/>
-                <img src={IconAvatar} className={classes.iconAvatar}/>
+                <img src={IconAvatar} className={classes.iconAvatar} onClick={props.showSidebar}/>
                 <img src={IconBookmark} className={classes.iconBookmark}/>
             </div>
         </div>

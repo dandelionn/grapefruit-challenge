@@ -1,0 +1,36 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile>div {
+    background-color: #ef6f44;
+    border-radius: 55px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+.profile input {
+    width: 350px;
+    border: none;
+    background-color: #ef6f44;
+    color:white;
+}
+
+.profile input:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.profile img {
+    height: 20px;
+    width: 20px;
+}

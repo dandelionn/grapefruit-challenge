@@ -1,0 +1,40 @@
+.footer {
+    position:absolute;
+    bottom: 0px;
+    background-image: linear-gradient(0deg, #f96331 90%, rgba(245,174,151,0) 100%);
+    opacity: 0.8;
+    height: 17%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+}
+
+.content {
+    opacity: 0.8;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.saving {
+    text-transform: uppercase;
+    font-size: 13px;
+    opacity: 0.5;
+}
+
+.iconShutdown, .iconRightArrow {
+    height: 30px;
+}
+
+.iconRightArrow {
+
+}
+
+.iconShutdown {
+
+}

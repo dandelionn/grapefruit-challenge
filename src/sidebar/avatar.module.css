@@ -1,0 +1,43 @@
+
+.avatarIcons {
+    display: flex;
+    flex-direction: row;
+}
+
+.avatarImage {
+    border-radius: 120px;
+    width: 150px;
+    height: 150px;
+}
+
+.iconUpload, .iconSync {
+    width: 46px;
+    height: 45px;
+}
+
+.avatarIcons div {
+    width: 150px;
+    height: 150px;
+}
+
+.upload, .avatar, .sync {
+    border-radius: 120px;
+    background-color: #ef6f44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload {
+    z-index: 1;
+    margin-right: -20px;
+}
+
+.avatar {
+    z-index:3;
+}
+
+.sync {
+    margin-left: -20px;
+    z-index: 1;
+}

@@ -19,6 +19,7 @@
     width: 100%;
     overflow: auto;
     padding-right: 20px;
+    overflow-x: hidden;
 }
 
 .chartSection {

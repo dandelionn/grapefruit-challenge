@@ -1,12 +1,18 @@
 import { symbol } from 'prop-types';
-import react from 'react';
+import react, { useState } from 'react';
 import classes from './tab.module.css';
 
 const Tab = (props) => {
+    const [active, setActive] = useState(false);
     console.log("here");
     const procent = -40.7;
+
+    const handleClick = () => {
+        setActive(!active);
+    }
+
     return (
-       <div className={classes.tab}>
+       <div className={active? [classes.tab, classes.active].join(' ') : classes.tab} onClick={handleClick}>
            <div className={classes.tabContent}>
                 <div className={classes.symbolAndPrice}>
                     <div className={classes.symbol}>{"NASDAQ"}</div>
