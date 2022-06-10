@@ -11,10 +11,11 @@
     opacity: 0;
     transition: all 0.25s;
     -webkit-transition: all 0.25s;
-    
+    width: 0%;
 }
 
 .enter {
+    width: 45%;
     opacity: 1;
     right: 0;
 }

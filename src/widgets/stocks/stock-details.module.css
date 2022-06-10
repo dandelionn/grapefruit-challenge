@@ -1,0 +1,22 @@
+.stockDetails {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:black;
+    width: 70%;
+}
+
+.buttonInterval {
+    font-size: 12px;
+    width: 75px;
+    margin-top: 40px;
+    border: 1px solid #b1b1b1;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-transform: uppercase;
+}
+

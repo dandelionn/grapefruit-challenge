@@ -1,0 +1,25 @@
+.statistics {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    margin:40px;
+    gap: 80px;
+    justify-content: space-around;
+ 
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+.data>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.data>div:first-child {
+    color: #b1b1b1;
+}

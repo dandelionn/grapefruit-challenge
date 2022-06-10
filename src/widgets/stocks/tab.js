@@ -1,19 +1,20 @@
-import { symbol } from 'prop-types';
 import react, { useState } from 'react';
 import classes from './tab.module.css';
 
 const Tab = (props) => {
-    const [active, setActive] = useState(false);
-    console.log("here");
     const procent = -40.7;
 
-    const handleClick = () => {
-        setActive(!active);
+    const getTabClassName = () => {
+        return props.selected ? [classes.tab, classes.active].join(' ') : classes.tab;
+    }
+
+    const getTabContentClassName = () => {
+        return props.noBorder ? [classes.tabContent, classes.noBorderBottom].join(' ') : [classes.tabContent, classes.borderBottom].join(' ');
     }
 
     return (
-       <div className={active? [classes.tab, classes.active].join(' ') : classes.tab} onClick={handleClick}>
-           <div className={classes.tabContent}>
+       <div className={ getTabClassName() } onClick={props.onClick}>
+           <div className={ getTabContentClassName() }>
                 <div className={classes.symbolAndPrice}>
                     <div className={classes.symbol}>{"NASDAQ"}</div>
                     <div className={classes.price}>{"5,055.55"}</div>
